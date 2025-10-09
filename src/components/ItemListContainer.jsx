@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 
 export const ItemListContainer = (props) => {
   const [items, setItems] = useState([]);
+  const [titulo, setTitulo] = useState("Productos");
   const categoria = useParams().categoria;
 
   useEffect(() => {
@@ -14,11 +15,13 @@ export const ItemListContainer = (props) => {
           item.categoria.includes(categoria)
         );
         setItems(filtrados);
+        setTitulo(categoria);
       } else {
         setItems(data);
+        setTitulo("Mundo");
       }
     });
   }, [categoria]);
 
-  return <ItemList items={items} />;
+  return <ItemList items={items} titulo={titulo} />;
 };

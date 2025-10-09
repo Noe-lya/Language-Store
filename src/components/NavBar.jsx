@@ -26,35 +26,47 @@ export const NavBar = () => {
                 Inicio
               </Link>
             </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/productos">
-                Productos
+            <li className="nav-item dropdown">
+              <Link
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Idiomas
               </Link>
-            </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/productos/América">
-                América
-              </Link>
-            </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/productos/Asia">
-                Asia
-              </Link>
-            </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/productos/África">
-                África
-              </Link>
-            </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/productos/Europa">
-                Europa
-              </Link>
-            </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/productos/Oceanía">
-                Oceanía
-              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" to="/mundo/América">
+                    América
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/mundo/Europa">
+                    Europa
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/mundo/Asia">
+                    Asia
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/mundo/Oceanía">
+                    Oceanía
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/mundo/África">
+                    África
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/mundo">
+                    Mundo
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-item menu-link">
               <Link className="nav-link active" to="/contacto">

@@ -1,9 +1,9 @@
 import { Item } from "./Item";
 
-export const ItemList = ({ items }) => {
+export const ItemList = ({ items, titulo }) => {
   return (
     <div className="container">
-      <h2 className="main-title">Idiomas</h2>
+      <h2 className="main-title">{titulo}</h2>
 
       <div className="productos">
         {items.map((item) => (
