@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 export const ItemListContainer = (props) => {
   const [items, setItems] = useState([]);
-  const [titulo, setTitulo] = useState("Productos");
+  const [titulo, setTitulo] = useState("Mundo");
   const categoria = useParams().categoria;
 
   useEffect(() => {
