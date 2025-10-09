@@ -1,15 +1,25 @@
-import {NavBar} from './components/NavBar'
-import {ItemListContainer} from './components/ItemListContainer'
-import './App.css'
+import { NavBar } from "./components/NavBar";
+import { ItemListContainer } from "./components/ItemListContainer";
+import "./App.css";
+import { ItemDetailContainer } from "./components/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <ItemListContainer saludo="¡Hola humano bot, bienvenido a este mundo donde al comprar un idioma, tu sistema lo incorpora de inmediato, permitiéndote hablarlo con la fluidez y naturalidad de un nativo!
-       Un ideal que muchos humanos anhelamos: adquirir un idioma completo, sin cursos, sin esfuerzo, y dominarlo al instante."/>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/productos/:categoria" element={<ItemListContainer />} />
+          <Route path="/contacto" element={<h1>Contacto</h1>} />
+          <Route path="/carrito" element={<h1>Carrito</h1>} />
+          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

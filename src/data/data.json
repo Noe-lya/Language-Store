@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Español",
+    "img": "/assets/españa.png",
+    "desc": "Este idioma se practica en España y en muchos países de América Latina. Viene con las jergas de cada país incluidas.",
+    "categoria": ["Europa", "América"],
+    "price": 100
+  },
+  {
+    "id": 2,
+    "name": "Inglés",
+    "img": "/assets/inglaterra.png",
+    "desc": "Este idioma se habla en muchos países, incluyendo los Estados Unidos y el Reino Unido. Viene con todas las variantes incluidas.",
+    "categoria": ["Europa", "América", "África", "Oceanía"],
+    "price": 120
+  },
+  {
+    "id": 3,
+    "name": "Francés",
+    "img": "/assets/francia.png",
+    "desc": "Este idioma se habla en Francia y en varios países de África. Viene con todas las variantes incluidas",
+    "categoria": ["Europa", "América", "África", "Oceanía"],
+    "price": 130
+  },
+  {
+    "id": 4,
+    "name": "Alemán",
+    "img": "/assets/aleman.png",
+    "desc": "Este idioma se habla en Alemania y en varios países de Europa. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 140
+  },
+  {
+    "id": 5,
+    "name": "Italiano",
+    "img": "/assets/italiano.jpg",
+    "desc": "Este idioma se habla en Italia y en algunos países de Suiza. Viene con ltodas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 110
+  },
+  {
+    "id": 6,
+    "name": "Chino",
+    "img": "/assets/chino.png",
+    "desc": "Este idioma se habla en China y en otros países asiáticos. Viene con todas las variantes incluidas.",
+    "categoria": "Asia",
+    "price": 200
+  },
+  {
+    "id": 7,
+    "name": "Japonés",
+    "img": "/assets/japon.png",
+    "desc": "Este idioma se habla en Japón y en algunos otros países asiáticos. Viene con las jergas de cada país incluidas.",
+    "categoria": "Asia",
+    "price": 210
+  },
+  {
+    "id": 8,
+    "name": "Ruso",
+    "img": "/assets/ruso.png",
+    "desc": "Este idioma se habla en Rusia y en varios países de Europa del Este. Viene con todas las variantes incluidas.",
+    "categoria": ["Europa", "Asia"],
+    "price": 150
+  },
+  {
+    "id": 9,
+    "name": "Portugués",
+    "img": "/assets/brasil.png",
+    "desc": "Este idioma se habla en Portugal y en Brasil. Viene con todas las variantes incluidas.",
+    "categoria": ["Europa", "América", "África"],
+    "price": 115
+  },
+  {
+    "id": 10,
+    "name": "Árabe",
+    "img": "/assets/arabe.png",
+    "desc": "Este idioma se habla en varios países de Oriente Medio y África del Norte. Viene con todas las variantes incluidas.",
+    "categoria": ["Asia", "África"],
+    "price": 180
+  },
+  {
+    "id": 11,
+    "name": "Hindi",
+    "img": "/assets/india.png",
+    "desc": "Este idioma se habla en India y en algunos otros países del sur de Asia. Viene con todas las variantes incluidas.",
+    "categoria": ["Asia", "Oceanía"],
+    "price": 170
+  },
+  {
+    "id": 12,
+    "name": "Coreano",
+    "img": "/assets/corea.png",
+    "desc": "Este idioma se habla en Corea del Sur y Corea del Norte. Viene con todas las variantes incluidas.",
+    "categoria": "Asia",
+    "price": 160
+  },
+  {
+    "id": 13,
+    "name": "Sueco",
+    "img": "/assets/suecia.png",
+    "desc": "Este idioma se habla en Suecia y en algunos otros países nórdicos. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 125
+  },
+  {
+    "id": 14,
+    "name": "Holandés",
+    "img": "/assets/holanda.png",
+    "desc": "Este idioma se habla en los Países Bajos y en Bélgica. Viene con todas las variantes incluidas.",
+    "categoria": ["Europa", "América"],
+    "price": 130
+  },
+  {
+    "id": 15,
+    "name": "Turco",
+    "img": "/assets/turquia.PNG",
+    "desc": "Este idioma se habla en Turquía y en algunos otros países de Oriente Medio. Viene con todas las variantes incluidas.",
+    "categoria": ["Europa", "Asia"],
+    "price": 145
+  },
+  {
+    "id": 16,
+    "name": "Griego",
+    "img": "/assets/grecia.png",
+    "desc": "Este idioma se habla en Grecia y en Chipre. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 135
+  },
+  {
+    "id": 17,
+    "name": "Polaco",
+    "img": "/assets/polonia.png",
+    "desc": "Este idioma se habla en Polonia y en algunos otros países de Europa del Este. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 120
+  },
+  {
+    "id": 18,
+    "name": "Noruego",
+    "img": "/assets/noruega.png",
+    "desc": "Este idioma se habla en Noruega y en algunos otros países nórdicos. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 130
+  },
+  {
+    "id": 19,
+    "name": "Finlandés",
+    "img": "/assets/finlandia.png",
+    "desc": "Este idioma se habla en Finlandia y en algunos otros países nórdicos. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 125
+  },
+  {
+    "id": 20,
+    "name": "Danés",
+    "img": "/assets/dinamarca.png",
+    "desc": "Este idioma se habla en Dinamarca y en algunos otros países nórdicos. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 130
+  },
+  {
+    "id": 21,
+    "name": "Checo",
+    "img": "/assets/checo.png",
+    "desc": "Este idioma se habla en la República Checa y en algunos otros países de Europa Central. Viene con todas las variantes incluidas.",
+    "categoria": "Europa",
+    "price": 115
+  }
+]
