@@ -1,4 +1,11 @@
 export const ItemDetail = ({ item }) => {
+  const formatCategorias = (categoria) => {
+    if (Array.isArray(categoria)) {
+      return categoria.join(", ");
+    }
+    return categoria;
+  };
+
   return (
     <div className="container">
       <div className="producto-detalle">
@@ -6,7 +13,9 @@ export const ItemDetail = ({ item }) => {
         <div>
           <h2 className="titulo">{item.name}</h2>
           <p className="descripcion">{item.desc}</p>
-          <p className="categoria">{item.categoria}</p>
+          <p className="categoria">
+            Categorías: {formatCategorias(item.categoria)}
+          </p>
           <p className="precio">${item.price}</p>
         </div>
       </div>

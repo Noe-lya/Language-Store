@@ -28,7 +28,7 @@ export const NavBar = () => {
             </li>
             <li className="nav-item dropdown">
               <Link
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -75,7 +75,7 @@ export const NavBar = () => {
             </li>
             <li className="nav-item menu-link">
               <Link className="nav-link active" to="/carrito">
-                Carrito
+                <img src="/assets/carrito.png" alt="Carrito" width={30} />
               </Link>
             </li>
           </ul>
