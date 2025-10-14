@@ -8,9 +8,13 @@ export const ItemDetailContainer = () => {
   const id = useParams().id;
 
   useEffect(() => {
-    pedirItemPorId(Number(id)).then((res) => {
-      setItem(res);
-    });
+    pedirItemPorId(Number(id))
+      .then((res) => {
+        setItem(res);
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+      });
   }, [id]);
 
   return <div>{item && <ItemDetail item={item} />}</div>;

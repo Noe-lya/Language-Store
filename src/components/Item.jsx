@@ -7,7 +7,7 @@ export const Item = ({ item }) => {
       <div>
         <h2>{item.name}</h2>
         <p className="precio">Precio: ${item.price}</p>
-        <Link className="ver-mas" to={`./item/${item.id}`}>
+        <Link className="ver-mas" to={`/item/${item.id}`}>
           Ver más
         </Link>
       </div>

@@ -29,7 +29,7 @@ export const NavBar = () => {
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="#"
                 role="button"
                 data-bs-toggle="dropdown"
               >

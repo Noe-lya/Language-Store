@@ -10,11 +10,13 @@ export const pedirDatos = () => {
 
 export const pedirItemPorId = (id) => {
   return new Promise((resolve, reject) => {
-    const item = data.find((elemento) => elemento.id === id);
-    if (item) {
-      resolve(item);
-    } else {
-      reject(new Error("Item no encontrado"));
-    }
+    setTimeout(() => {
+      const item = data.find((elemento) => elemento.id === id);
+      if (item) {
+        resolve(item);
+      } else {
+        reject(new Error("Item no encontrado"));
+      }
+    }, 1000);
   });
 };
