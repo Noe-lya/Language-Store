@@ -1,37 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Español",
-    "img": "/assets/españa.png",
-    "desc": "Este idioma se practica en España y en muchos países de América Latina. Viene con las jergas de cada país incluidas.",
-    "categoria": ["Europa", "América"],
-    "price": 100
-  },
-  {
-    "id": 2,
-    "name": "Inglés",
-    "img": "/assets/inglaterra.png",
-    "desc": "Este idioma se habla en muchos países, incluyendo los Estados Unidos y el Reino Unido. Viene con todas las variantes incluidas.",
-    "categoria": ["Europa", "América", "África", "Oceanía"],
-    "price": 120
-  },
-  {
-    "id": 3,
-    "name": "Francés",
-    "img": "/assets/francia.png",
-    "desc": "Este idioma se habla en Francia y en varios países de África. Viene con todas las variantes incluidas",
-    "categoria": ["Europa", "América", "África", "Oceanía"],
-    "price": 130
-  },
-  {
-    "id": 4,
-    "name": "Alemán",
-    "img": "/assets/aleman.png",
-    "desc": "Este idioma se habla en Alemania y en varios países de Europa. Viene con todas las variantes incluidas.",
-    "categoria": "Europa",
-    "price": 140
-  },
-  {
     "id": 5,
     "name": "Italiano",
     "img": "/assets/italiano.jpg",
@@ -150,21 +118,5 @@
     "desc": "Este idioma se habla en Finlandia y en algunos otros países nórdicos. Viene con todas las variantes incluidas.",
     "categoria": "Europa",
     "price": 125
-  },
-  {
-    "id": 20,
-    "name": "Danés",
-    "img": "/assets/dinamarca.png",
-    "desc": "Este idioma se habla en Dinamarca y en algunos otros países nórdicos. Viene con todas las variantes incluidas.",
-    "categoria": "Europa",
-    "price": 130
-  },
-  {
-    "id": 21,
-    "name": "Checo",
-    "img": "/assets/checo.png",
-    "desc": "Este idioma se habla en la República Checa y en algunos otros países de Europa Central. Viene con todas las variantes incluidas.",
-    "categoria": "Europa",
-    "price": 115
   }
 ]

@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../contexts/CartContext";
-import ItemCount from "./ItemCount";
+import { ItemCount } from "./ItemCount";
 
 export const ItemDetail = ({ item }) => {
   const formatCategorias = (categoria) => {
@@ -13,13 +13,20 @@ export const ItemDetail = ({ item }) => {
   const { agregarAlCarrito } = useContext(CartContext);
 
   const [count, setCount] = useState(1);
+  const [stockDisponible, setStockDisponible] = useState(item.stock || 0);
   const handleRestar = () => {
     count > 1 && setCount(count - 1);
   };
   const handleSumar = () => {
-    setCount(count + 1);
+    count < stockDisponible && setCount(count + 1);
   };
-
+  const handleAgregar = () => {
+    if (count <= stockDisponible) {
+      agregarAlCarrito(item, count);
+      setStockDisponible(stockDisponible - count);
+      setCount(1);
+    }
+  };
   return (
     <div className="container">
       <div className="producto-detalle">
@@ -27,18 +34,19 @@ export const ItemDetail = ({ item }) => {
         <div>
           <h2 className="titulo">{item.name}</h2>
           <p className="descripcion">{item.desc}</p>
-          <p className="categoria">
-            Categorías: {formatCategorias(item.categoria)}
-          </p>
           <p className="precio">${item.price}</p>
-          <ItemCount
-            count={count}
-            handleSumar={handleSumar}
-            handleRestar={handleRestar}
-            handleAgregar={() => {
-              agregarAlCarrito(item, count);
-            }}
-          />
+          <p className="stock">Stock disponible: {stockDisponible}</p>
+          {stockDisponible > 0 ? (
+            <ItemCount
+              count={count}
+              handleSumar={handleSumar}
+              handleRestar={handleRestar}
+              handleAgregar={handleAgregar}
+              stock={stockDisponible}
+            />
+          ) : (
+            <p className="sin-stock">Producto sin stock</p>
+          )}
         </div>
       </div>
     </div>

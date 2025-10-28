@@ -1,16 +1,28 @@
-const ItemCount = ({ count, handleRestar, handleSumar, handleAgregar }) => {
+export const ItemCount = ({
+  count,
+  handleRestar,
+  handleSumar,
+  handleAgregar,
+  stock,
+}) => {
   return (
     <div>
       <div className="item-count">
-        <button onClick={handleRestar}>-</button>
+        <button onClick={handleRestar} disabled={count <= 1}>
+          -
+        </button>
         <p>{count}</p>
-        <button onClick={handleSumar}>+</button>
+        <button onClick={handleSumar} disabled={count >= stock}>
+          +
+        </button>
       </div>
-      <button className="agregar-al-carrito" onClick={handleAgregar}>
+      <button
+        className="agregar-al-carrito"
+        onClick={handleAgregar}
+        disabled={count > stock}
+      >
         Agregar al carrito
       </button>
     </div>
   );
 };
-
-export default ItemCount;

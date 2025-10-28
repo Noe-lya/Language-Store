@@ -151,7 +151,7 @@
   padding: 1rem;
 }
 
-/* .formulario {
+.formulario {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -169,4 +169,4 @@
   outline: 0;
   border: 2px solid var(--clr-main);
   outline: 2px solid var(--clr-main);
-} */
+}

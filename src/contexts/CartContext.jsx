@@ -35,6 +35,9 @@ export const CartProvider = ({ children }) => {
     return carrito.reduce((acc, item) => acc + item.count * item.price, 0); //Sumo el precio de todos los items en el carrito
   };
 
+  const eliminarDelCarrito = (id) => {
+    setCarrito(carrito.filter((item) => item.id !== id));
+  };
   const vaciarCarrito = () => {
     //Funcion para vaciar el carrito
     setCarrito([]); //Seteo el estado del carrito a un array vacio
@@ -47,11 +50,13 @@ export const CartProvider = ({ children }) => {
         cantidadEnCarrito,
         precioTotal,
         vaciarCarrito,
+        eliminarDelCarrito,
       }}
     >
       {children}
     </CartContext.Provider>
   );
 };
+
 //Children son los componentes que van a consumir el contexto.
 //El value es un objeto que contiene el estado del carrito y las funciones para modificarlo.

@@ -1,12 +1,76 @@
-# React + Vite
+ENTREGA 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Almacenamiento del estado de carrito de compras mediante Context.
 
-Currently, two official plugins are available:
+Generación de un documento en Firestore al confirmar una compra, registrando los detalles de la misma, brindarle al usuario el id (o detalles adicionales) de la orden generada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Utilizar renderizado condicional para mostrar loaders y mensajes condicionales, como “producto sin stock”, “carrito vacío”, etc.
 
-## Expanding the ESLint configuration
+Crear un documento en formato markdown documentando brevemente el proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🌍 Language Store - E-commerce de Idiomas
+
+Una aplicación e-commerce moderna desarrollada en React para la venta de cursos y materiales de idiomas de todo el mundo.
+
+## 🚀 Características
+
+- **Catálogo completo** de idiomas organizados por continentes
+- **Navegación intuitiva** con filtros por categorías
+- **Carrito de compras** persistente con Context API
+- **Detalles de productos** con información completa
+- **Interfaz responsive** y moderna
+- **Integración con Firebase** para base de datos en tiempo real
+
+## 📦 Estructura del Proyecto
+
+```
+src/
+├── components/
+│   ├── NavBar.jsx           # Barra de navegación con categorías
+│   ├── CartWidget.jsx       # Icono del carrito con contador
+│   ├── ItemListContainer.jsx # Contenedor de listado de productos
+│   ├── ItemList.jsx         # Presentación del listado
+│   ├── Item.jsx             # Tarjeta individual de producto
+│   ├── ItemDetailContainer.jsx # Contenedor de detalle
+│   ├── ItemDetail.jsx       # Vista detallada del producto
+│   ├── ItemCount.jsx        # Contador para agregar al carrito
+|   |── CheckoutForm.jsx     #
+│   ├── Carrito.jsx          # Vista del carrito de compras
+│   └── CartItem.jsx         # Item individual en carrito
+├── contexts/
+│   └── CartContext.jsx      # Context del carrito de compras
+├── firebase/
+│   └── config.js            # Configuración de Firebase
+└── App.jsx                  # Componente principal
+```
+
+## 📁 Estructura de Datos en Firebase
+
+### Colección: `idiomas`
+
+```javascript
+{
+  name: "Español",
+  desc: "Descripción del idioma...",
+  price: 200,
+  img: "https://ejemplo.com/bandera.png",
+  category: ["América", "Europa"], // Array de categorías
+  stock: 50
+}
+```
+
+## 📱 Responsive Design
+
+La aplicación está optimizada para:
+
+- 📱 Dispositivos móviles
+- 💻 Tablets
+- 🖥️ Desktop
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para detalles.
+
+## 👥 Autores
+
+- **Melina Noelia Andrada** - [@Noe-lya](https://github.com/Noe-lya)
