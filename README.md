@@ -1,13 +1,3 @@
-ENTREGA 3
-
-Almacenamiento del estado de carrito de compras mediante Context.
-
-Generación de un documento en Firestore al confirmar una compra, registrando los detalles de la misma, brindarle al usuario el id (o detalles adicionales) de la orden generada.
-
-Utilizar renderizado condicional para mostrar loaders y mensajes condicionales, como “producto sin stock”, “carrito vacío”, etc.
-
-Crear un documento en formato markdown documentando brevemente el proyecto
-
 # 🌍 Language Store - E-commerce de Idiomas
 
 Una aplicación e-commerce moderna desarrollada en React para la venta de cursos y materiales de idiomas de todo el mundo.
