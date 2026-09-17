@@ -148,9 +148,17 @@ const idiomas = [
   {
     name: "Español",
     desc: "Este idioma se habla en España y en la mayoría de los países de Latinoamérica. Viene con todas las variantes incluidas.",
-    img: "/assets/español.jpg",
+    img: "/assets/españa.png",
     price: 100,
     category: ["Europa", "América"],
+    stock: 50,
+  },
+  {
+    name: "Español - Jerga Argentina",
+    desc: "El español rioplatense de Argentina, con el voseo y el lunfardo incluidos. Ideal para quienes quieren sonar como un porteño.",
+    img: "/assets/argentina.png",
+    price: 110,
+    category: ["América"],
     stock: 50,
   },
   {

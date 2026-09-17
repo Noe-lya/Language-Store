@@ -2,10 +2,18 @@
   {
     "id": 1,
     "name": "Español",
-    "img": "/assets/español.jpg",
+    "img": "/assets/españa.png",
     "desc": "Este idioma se habla en España y en la mayoría de los países de Latinoamérica. Viene con todas las variantes incluidas.",
     "categoria": ["Europa", "América"],
     "price": 100
+  },
+  {
+    "id": 22,
+    "name": "Español - Jerga Argentina",
+    "img": "/assets/argentina.png",
+    "desc": "El español rioplatense de Argentina, con el voseo y el lunfardo incluidos. Ideal para quienes quieren sonar como un porteño.",
+    "categoria": ["América"],
+    "price": 110
   },
   {
     "id": 2,
