@@ -1,6 +1,6 @@
 # 🌍 Language Store - E-commerce de Idiomas
 
-Language Store es una aplicación e-commerce desarrollada en React que simula la venta de cursos de idiomas de todo el mundo. El usuario puede recorrer un catálogo organizado por continentes, ver el detalle de cada idioma, agregar productos a un carrito de compras persistente durante la sesión y finalizar la compra mediante un formulario de checkout que genera un pedido en la base de datos.
+Language Store es una aplicación e-commerce desarrollada en React que simula la venta de cursos de idiomas de todo el mundo. El usuario puede recorrer un catálogo organizado por continentes, agregar productos a un carrito de compras persistente durante la sesión y finalizar la compra mediante un formulario de checkout que genera un pedido en la base de datos.
 
 El catálogo de productos y los pedidos generados se almacenan en [Firebase](https://firebase.google.com/) (Firestore), que cumple el rol de backend de la aplicación.
 
