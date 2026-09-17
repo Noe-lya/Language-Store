@@ -64,3 +64,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 ## 👥 Autores
 
 - **Melina Noelia Andrada** - [@Noe-lya](https://github.com/Noe-lya)
+
+## 📱 Deployado en Vercel App
+https://language-store.vercel.app/
