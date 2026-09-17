@@ -58,48 +58,6 @@ Language Store/
 ├── package.json
 └── vite.config.js
 ```
-
-## 🗄️ Backend: Firebase (Firestore)
-
-El backend consiste en un proyecto de Firebase con dos colecciones en Firestore. El cliente se inicializa en [`src/firebase/config.js`](src/firebase/config.js).
-
-### Colección `idiomas` (catálogo de productos)
-
-```javascript
-{
-  name: "Español",
-  desc: "Descripción del idioma...",
-  price: 100,
-  img: "/assets/español.jpg",
-  category: ["Europa", "América"], // Array de continentes
-  stock: 50
-}
-```
-
-`ItemListContainer` trae todos los documentos, o filtra con `where("category", "array-contains", categoria)` cuando se navega a `/mundo/:categoria`. `ItemDetailContainer` trae un documento puntual por id.
-
-### Colección `pedidos` (órdenes de compra)
-
-```javascript
-{
-  cliente: { nombre, email, telefono },
-  productos: [ /* items del carrito */ ],
-  total: 250
-}
-```
-
-`CheckoutForm` crea el documento con `addDoc` al confirmar la compra y muestra al usuario el id generado por Firestore.
-
-### Recargar el catálogo completo
-
-El script [`scripts/resetIdiomas.mjs`](scripts/resetIdiomas.mjs) borra todos los documentos de la colección `idiomas` y vuelve a cargar los 21 idiomas del catálogo (incluyendo Español, Inglés, Francés, Alemán, Checo y Danés) con imágenes locales (`/assets/...`) y categorías consistentes:
-
-```bash
-npm run seed
-```
-
-> ⚠️ Este script borra el contenido actual de la colección `idiomas` antes de recargarla. Si las reglas de seguridad de Firestore no permiten escritura pública, hay que cargar los datos manualmente desde la consola de Firebase.
-
 ## ▶️ Cómo correr el proyecto
 
 ```bash
