@@ -89,6 +89,28 @@
 .producto-detalle-info h3 {
   font-size: 2rem;
 }
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
 */ .categoria {
   font-size: 0.8rem;
   color: #424242;

@@ -69,11 +69,6 @@ export const NavBar = () => {
                 </li>
               </ul>
             </li>
-            <li className="nav-item menu-link">
-              <Link className="nav-link active" to="/contacto">
-                Contacto
-              </Link>
-            </li>
             <CartWidget />
           </ul>
         </div>
